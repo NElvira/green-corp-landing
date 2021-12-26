@@ -69,6 +69,16 @@ header {
     padding-bottom: 115px;
     padding-top: 115px;
   }
+  .about {
+    position: relative;
+ }
+  .orb-canvas {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+ }
   .about h1 {
     font-size: 70px;
     line-height: 76px;
