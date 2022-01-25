@@ -1,5 +1,6 @@
 const COLORS = ["255,108,80", "5,117,18", "29,39,57", "67,189,81"];
 const BUBBLE_DENSITY = 100;
+const SIZE = window.innerWidth;
 
 function generateDecimalBetween(left, right) {
    return (Math.random() * (left - right) + right).toFixed(2);
@@ -62,7 +63,7 @@ class CanvasBackground {
    }
 
    animate() {
-       this.ctx.clearRect(0, 0, this.canvas.clientWidth, this.canvas.clientHeight);
+       this.ctx.clearRect(0, 0, SIZE, this.canvas.clientWidth, this.canvas.clientHeight);
 
        this.bubblesList.forEach((bubble) => {
            bubble.move();
