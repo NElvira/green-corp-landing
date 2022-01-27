@@ -63,7 +63,7 @@ class CanvasBackground {
    }
 
    animate() {
-       this.ctx.clearRect(0, 0, SIZE, this.canvas.clientWidth, this.canvas.clientHeight);
+       this.ctx.clearRect(0, 0, this.canvas.clientWidth, this.canvas.clientHeight);
 
        this.bubblesList.forEach((bubble) => {
            bubble.move();
