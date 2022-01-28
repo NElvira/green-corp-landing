@@ -395,6 +395,7 @@ header {
       }
       .features__feedback-left h2, .features__box h3 {
         font-size: 36px;
+        flex-direction: column;
       }
       .features__feedback-right {
         flex-direction: column;
